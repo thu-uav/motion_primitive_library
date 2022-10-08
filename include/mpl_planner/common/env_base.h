@@ -19,6 +19,10 @@ class env_base {
   /// Simple constructor
   env_base() {}
 
+  void setBoundingBox(const Vec3f &ori, const Vec3f &dim) {
+    return ;
+  }
+
   /// Check if state hit the goal region, use L-1 norm
   virtual bool is_goal(const Waypoint<Dim>& state) const {
     if (state.t >= t_max_) return true;
