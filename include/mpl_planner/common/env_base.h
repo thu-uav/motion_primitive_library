@@ -19,7 +19,7 @@ class env_base {
   /// Simple constructor
   env_base() {}
 
-  void setBoundingBox(const Vec3f &ori, const Vec3f &dim) {
+  virtual void setBoundingBox(const Vec3f &ori, const Vec3f &dim) {
     return ;
   }
 
